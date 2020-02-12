@@ -9,7 +9,7 @@
     <link href="assets/css/styles.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="TMS.png" type="image/x-icon">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
@@ -44,6 +44,92 @@
                 <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Setting</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Log out</a></li>
+            </ul>
+            <!-- Search Form -->
+            <form class="form-inline ml-3">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Message dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link">
+                        <i class="far fa-comments"></i>
+                        <!-- Php code for Unread messages -->
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message start -->
+                            <div class="media">
+                                <img src="assets/img/user1-128x128.jpg" alt="user avatar" class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Dr Ajadi
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Call me back</p>
+                                    <p class="text-sm text-muted"><i class="fas fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- ./Message end -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message start -->
+                            <div class="media">
+                                <img src="assets/img/user8-128x128.jpg" alt="" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Dr Oludare
+                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">I got your messsage</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock"></i> 6 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message stop -->
+                        </a>
+                    </div>
+                </li>
+                <!-- NOtification Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link">
+                        <i class="far fa-bell" aria-hidden="true"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>4 new messages
+                            <span class="float-right text-muted text-sm">12 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>8 friends Request
+                            <span class="float-right text-muted text-sm">16 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>3 new reports
+                            <span class="float-right text-muted text-sm">23 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-widget="control-sidebar" data-slide="true">
+                        <i class="fas fa-th-large    "></i>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.Navbar -->
@@ -112,6 +198,7 @@
             <section class="content">
                 <div class="container-fluid">
                     <!-- Small boxes (start box) -->
+                    <!-- first row -->
                     <div class="row">
                         <!-- Doctors -->
                         <div class="col-lg-3 col-6">
@@ -122,9 +209,9 @@
                                     <p>Doctors</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="ion ion-person"></i>
+                                    <i class="fas fa-users-cog"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+                                <a href="doctors.html" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
                         <!-- ./col -->
@@ -137,26 +224,26 @@
                                         <p>Patients</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="ion ion-person"></i>
+                                        <i class="fas fa-users"></i>
                                     </div>
-                                    <a href="#" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+                                    <a href="patient.html" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
                         <!-- ./coll -->
                         <!-- Lab -->
                         <div class="col-lg-3 col-6">
-                                <!-- small box -->
-                                <div class="small-box bg-info">
-                                    <div class="inner">
-                                        <h3>15</h3>
-                                        <p>Laboratries</p>
-                                    </div>
-                                    <div class="icon">
-                                        <i class="ion ion-f"></i>
-                                    </div>
-                                    <a href="#" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+                            <!-- small box -->
+                            <div class="small-box bg-info">
+                                <div class="inner">
+                                    <h3>15</h3>
+                                    <p>Laboratries</p>
                                 </div>
+                                <div class="icon">
+                                    <i class="fas fa-flask"></i>
+                                </div>
+                                <a href="lab.html" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
+                        </div>
                         <!-- ./coll -->
                         <!-- Ratings -->
                         <div class="col-lg-3 col-6">
@@ -167,78 +254,79 @@
                                     <p>Ratings</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="ion ion-stats-bars"></i>
+                                    <i class="fas fa-list"></i>
                                 </div>
-                                <a href="" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+                                <a href="#" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
                         <!-- ./col -->
                     </div>
                     <!-- ./row -->
                     <!-- Small boxes (start box) -->
+                    <!-- second row -->
                     <div class="row">
-                        <!-- Doctors -->
+                        <!-- Pharmarcies -->
                         <div class="col-lg-3 col-6">
                             <!-- small box -->
                             <div class="small-box bg-info">
                                 <div class="inner">
                                     <h3>180</h3>
-                                    <p>Doctors</p>
+                                    <p>Pharmarcies</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="ion ion-person"></i>
+                                    <i class="fas fa-plus-circle"></i>
                                 </div>
-                                <a href="#" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+                                <a href="pharmarcy.html" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
                         <!-- ./col -->
-                        <!-- Patient -->
-                        <div class="col-lg-3 col-6">
+                        <!-- Mobile Clinics -->
+                        <div class="col-lg-3 col-6">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
                                 <!-- small box -->
                                 <div class="small-box bg-success">
                                     <div class="inner">
                                         <h3>200</h3>
-                                        <p>Patients</p>
+                                        <p>Mobile Clinics</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="ion ion-person"></i>
+                                        <i class="fas fa-briefcase-medical"></i>
                                     </div>
-                                    <a href="#" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+                                    <a href="mobile.html" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
                         <!-- ./coll -->
-                        <!-- Lab -->
+                        <!-- Schedules -->
                         <div class="col-lg-3 col-6">
                                 <!-- small box -->
                                 <div class="small-box bg-info">
                                     <div class="inner">
                                         <h3>15</h3>
-                                        <p>Laboratries</p>
+                                        <p>Schedules</p>
                                     </div>
                                     <div class="icon">
-                                        <i class="ion ion-f"></i>
+                                        <i class="fas fa-calendar-check"></i>
                                     </div>
-                                    <a href="#" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+                                    <a href="schedule.html" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
                                 </div>
                             </div>
                         <!-- ./coll -->
-                        <!-- Ratings -->
+                        <!-- Request -->
                         <div class="col-lg-3 col-6">
                             <!-- small box -->
                             <div class="small-box bg-warning">
                                 <div class="inner">
                                     <h3>20 <sup style="font-size: 20px;">%</sup></h3>
-                                    <p>Ratings</p>
+                                    <p>Request</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="ion ion-stats-bars"></i>
+                                    <i class="fas fa"></i>
                                 </div>
-                                <a href="" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
+                                <a href="request.html" class="small-box-footer">More Info <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
                         </div>
                         <!-- ./col -->
                     </div>
-                    <!-- ./row -->
+                    <!-- ./ second row -->
                     <!-- Main row -->
                     <div class="row">
                         <!-- Left col -->
@@ -271,89 +359,47 @@
 
 
                         </section>
+                        <!-- /.Left col -->
+                        <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                        <div class="col-lg-5 connectedSortable">
+                             <!-- BAR CHART -->
+                            <div class="card card-success">
+                                <div class="card-header">
+                                    <h3 class="card-title">Bar Chart</h3>
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                            <i class="fas fa-times"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart">
+                                        <canvas id="barChart" style="min-height: 250px; height: 250px; max-height: 250px; max-width: 100%;"></canvas>
+                                    </div>
+                                </div>
+                                <!-- /.card-body -->
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.right -->
                     </div>
                 </div>
             </section>
         </div>
-    </div>
 
 
 
 
 
-    <!-- Navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">TMS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Setting</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Log out</a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
-    <!-- Dashboard -->
-    <!-- <div class="container-fluid">
-         <div class="row">
-             Sidebar
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a href="#dashboard" class="nav-link"><i class="fas fa-home"></i> Dashboard</a></li>
-                        <li class="nav-item"><a href="#doctors" class="nav-link"><i class="fas fa-users"></i> Doctors</a></li>
-                        <li class="nav-item"><a href="#patient" class="nav-link"><i class="fas fa-user-injured"></i> Patients</a></li>
-                        <li class="nav-item"><a href="#patient" class="nav-link"><i class="fas fa-plus-circle"></i> Pharmacy</a></li>
-                        <li class="nav-item"><a href="#patient" class="nav-link"><i class="fas fa-briefcase-medical"></i> Mobile Clinics</a></li>
-                        <li class="nav-item"><a href="#patient" class="nav-link"><i class="fas fa-flask"></i> Labs</a></li>
-                        <li class="nav-item"><a href="#schedule" class="nav-link"><i class="fas fa-calendar-check"></i> Schedule</a></li>
-                        <li class="nav-item"><a href="#records" class="nav-link"><i class="fas fa-mail-bulk"></i> Mail</a></li>
-                        <li class="nav-item"><a href="#records" class="nav-link"><i class="fas fa-clipboard-list"></i> Request</a></li>
-                        <li class="nav-item"><a href="#records" class="nav-link"><i class="fas fa-file-pdf"></i> Records</a></li>
-                    </ul>
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Reports</span>
-                        <a href="#" class="d-flex align-items-center text-muted" aria-label="Add new Report"></a>
-                    </h6>
-                    <ul class="nav flex-column mb-2">
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-report"></i> Recent Transfers</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-check-circle"></i> Transfers</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-adjust"></i> Transfers</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-times-circle"></i> Transfers</a></li>
-                    </ul>
-                </div>
-            </nav>
-             Main Dashboard
-             <div class="col-md-9">
-                 <h1>jhk</h1>
-            </div>
-         </div>
-    </div> -->
+        <!-- Control Sidebar -->
 
-
-
-
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-      </aside>
-      <!-- /.control-sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
     
@@ -364,6 +410,30 @@
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
       $.widget.bridge('uibutton', $.ui.button)
+      $(function (){
+          //-------------
+          //- BAR CHART -
+          //-------------
+          var barChartCanvas = $('#barChart').get(0).getContext('2d')
+          var barChartData = jQuery.extend(true, {}, areaChartData)
+          var temp0 = areaChartData.datasets[0]
+          var temp1 = areaChartData.datasets[1]
+          barChartData.datasets[0] = temp1
+          barChartData.datasets[1] = temp0
+
+          var barChartOptions = {
+              responsive              : true,
+              maintainAspectRatio     : false,
+              datasetFill             : false
+            }
+
+          var barChart = new Chart(barChartCanvas, {
+              type: 'bar',
+              data: barChartData,
+              options: barChartOptions
+            }
+        )
+        })
     </script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -386,11 +456,200 @@
     <!-- overlayScrollbars -->
     <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="assets/js/adminlte.js"></script>
+    <script src="assets/js/adminlte.min.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="assets/js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="assets/js/demo.js"></script>
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Charts -->
+    <script>
+        $(function () {
+          /* ChartJS
+           * -------
+           * Here we will create a few charts using ChartJS
+           */
+      
+          //--------------
+          //- AREA CHART -
+          //--------------
+      
+          // Get context with jQuery - using jQuery's .get() method.
+          var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
+      
+          var areaChartData = {
+            labels  : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [
+              {
+                label               : 'Digital Goods',
+                backgroundColor     : 'rgba(60,141,188,0.9)',
+                borderColor         : 'rgba(60,141,188,0.8)',
+                pointRadius          : false,
+                pointColor          : '#3b8bba',
+                pointStrokeColor    : 'rgba(60,141,188,1)',
+                pointHighlightFill  : '#fff',
+                pointHighlightStroke: 'rgba(60,141,188,1)',
+                data                : [28, 48, 40, 19, 86, 27, 90]
+              },
+              {
+                label               : 'Electronics',
+                backgroundColor     : 'rgba(210, 214, 222, 1)',
+                borderColor         : 'rgba(210, 214, 222, 1)',
+                pointRadius         : false,
+                pointColor          : 'rgba(210, 214, 222, 1)',
+                pointStrokeColor    : '#c1c7d1',
+                pointHighlightFill  : '#fff',
+                pointHighlightStroke: 'rgba(220,220,220,1)',
+                data                : [65, 59, 80, 81, 56, 55, 40]
+              },
+            ]
+          }
+      
+          var areaChartOptions = {
+            maintainAspectRatio : false,
+            responsive : true,
+            legend: {
+              display: false
+            },
+            scales: {
+              xAxes: [{
+                gridLines : {
+                  display : false,
+                }
+              }],
+              yAxes: [{
+                gridLines : {
+                  display : false,
+                }
+              }]
+            }
+          }
+      
+          // This will get the first returned node in the jQuery collection.
+          var areaChart       = new Chart(areaChartCanvas, { 
+            type: 'line',
+            data: areaChartData, 
+            options: areaChartOptions
+          })
+      
+          //-------------
+          //- LINE CHART -
+          //--------------
+          var lineChartCanvas = $('#lineChart').get(0).getContext('2d')
+          var lineChartOptions = jQuery.extend(true, {}, areaChartOptions)
+          var lineChartData = jQuery.extend(true, {}, areaChartData)
+          lineChartData.datasets[0].fill = false;
+          lineChartData.datasets[1].fill = false;
+          lineChartOptions.datasetFill = false
+      
+          var lineChart = new Chart(lineChartCanvas, { 
+            type: 'line',
+            data: lineChartData, 
+            options: lineChartOptions
+          })
+      
+          //-------------
+          //- DONUT CHART -
+          //-------------
+          // Get context with jQuery - using jQuery's .get() method.
+          var donutChartCanvas = $('#donutChart').get(0).getContext('2d')
+          var donutData        = {
+            labels: [
+                'Chrome', 
+                'IE',
+                'FireFox', 
+                'Safari', 
+                'Opera', 
+                'Navigator', 
+            ],
+            datasets: [
+              {
+                data: [700,500,400,600,300,100],
+                backgroundColor : ['#f56954', '#00a65a', '#f39c12', '#00c0ef', '#3c8dbc', '#d2d6de'],
+              }
+            ]
+          }
+          var donutOptions     = {
+            maintainAspectRatio : false,
+            responsive : true,
+          }
+          //Create pie or douhnut chart
+          // You can switch between pie and douhnut using the method below.
+          var donutChart = new Chart(donutChartCanvas, {
+            type: 'doughnut',
+            data: donutData,
+            options: donutOptions      
+          })
+      
+          //-------------
+          //- PIE CHART -
+          //-------------
+          // Get context with jQuery - using jQuery's .get() method.
+          var pieChartCanvas = $('#pieChart').get(0).getContext('2d')
+          var pieData        = donutData;
+          var pieOptions     = {
+            maintainAspectRatio : false,
+            responsive : true,
+          }
+          //Create pie or douhnut chart
+          // You can switch between pie and douhnut using the method below.
+          var pieChart = new Chart(pieChartCanvas, {
+            type: 'pie',
+            data: pieData,
+            options: pieOptions      
+          })
+      
+          //-------------
+          //- BAR CHART -
+          //-------------
+          var barChartCanvas = $('#barChart').get(0).getContext('2d')
+          var barChartData = jQuery.extend(true, {}, areaChartData)
+          var temp0 = areaChartData.datasets[0]
+          var temp1 = areaChartData.datasets[1]
+          barChartData.datasets[0] = temp1
+          barChartData.datasets[1] = temp0
+      
+          var barChartOptions = {
+            responsive              : true,
+            maintainAspectRatio     : false,
+            datasetFill             : false
+          }
+      
+          var barChart = new Chart(barChartCanvas, {
+            type: 'bar', 
+            data: barChartData,
+            options: barChartOptions
+          })
+      
+          //---------------------
+          //- STACKED BAR CHART -
+          //---------------------
+          var stackedBarChartCanvas = $('#stackedBarChart').get(0).getContext('2d')
+          var stackedBarChartData = jQuery.extend(true, {}, barChartData)
+      
+          var stackedBarChartOptions = {
+            responsive              : true,
+            maintainAspectRatio     : false,
+            scales: {
+              xAxes: [{
+                stacked: true,
+              }],
+              yAxes: [{
+                stacked: true
+              }]
+            }
+          }
+      
+          var stackedBarChart = new Chart(stackedBarChartCanvas, {
+            type: 'bar', 
+            data: stackedBarChartData,
+            options: stackedBarChartOptions
+          })
+        })
+    </script>
 </body>
 
 </html>
