@@ -8,26 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link href="assets/css/styles.css" rel="stylesheet"/>
     <link rel="shortcut icon" href="TMS.png" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
-    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <!-- Tempusdominus Bbootstrap 4 -->
-    <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
-    <!-- JQVMap -->
-    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+    <!-- DataTables -->
+    <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="assets/css/adminlte.min.css">
-    <!-- overlayScrollbars -->
-    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-    <!-- summernote -->
-    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
@@ -44,6 +31,92 @@
                 <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Setting</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Log out</a></li>
+            </ul>
+            <!-- Search Form -->
+            <form class="form-inline ml-3">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="btn btn-navbar" type="submit"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+            </form>
+    
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Message dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link">
+                        <i class="far fa-comments"></i>
+                        <!-- Php code for Unread messages -->
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message start -->
+                            <div class="media">
+                                <img src="assets/img/user1-128x128.jpg" alt="user avatar" class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Dr Ajadi
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Call me back</p>
+                                    <p class="text-sm text-muted"><i class="fas fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- ./Message end -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message start -->
+                            <div class="media">
+                                <img src="assets/img/user8-128x128.jpg" alt="" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Dr Oludare
+                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">I got your messsage</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock"></i> 6 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message stop -->
+                        </a>
+                    </div>
+                </li>
+                <!-- NOtification Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link">
+                        <i class="far fa-bell" aria-hidden="true"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>4 new messages
+                            <span class="float-right text-muted text-sm">12 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>8 friends Request
+                            <span class="float-right text-muted text-sm">16 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>3 new reports
+                            <span class="float-right text-muted text-sm">23 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-widget="control-sidebar" data-slide="true">
+                        <i class="fas fa-th-large    "></i>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.Navbar -->
@@ -91,7 +164,7 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header -->
-            <div class="content-header">
+            <section class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
@@ -100,132 +173,166 @@
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="">Patient</a></li>
-                                <li class="breadcrumb-item active"><a href="">Reports</a></li>
+                                <li class="breadcrumb-item active">Reports</li>
                             </ol>
                         </div><!--./col-->
                     </div><!--./row-->
                 </div><!--./container-fluid-->
-            </div>
+            </section>
             <!--content header-->
-
-            
-        </div>
-    </div>
-
-
-
-
-
-    <!-- Navbar -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">TMS</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Setting</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Log out</a>
-                </li>
-            </ul>
-        </div>
-    </nav> -->
-    <!-- Dashboard -->
-    <!-- <div class="container-fluid">
-         <div class="row">
-             Sidebar
-            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a href="#dashboard" class="nav-link"><i class="fas fa-home"></i> Dashboard</a></li>
-                        <li class="nav-item"><a href="#doctors" class="nav-link"><i class="fas fa-users"></i> Doctors</a></li>
-                        <li class="nav-item"><a href="#patient" class="nav-link"><i class="fas fa-user-injured"></i> Patients</a></li>
-                        <li class="nav-item"><a href="#patient" class="nav-link"><i class="fas fa-plus-circle"></i> Pharmacy</a></li>
-                        <li class="nav-item"><a href="#patient" class="nav-link"><i class="fas fa-briefcase-medical"></i> Mobile Clinics</a></li>
-                        <li class="nav-item"><a href="#patient" class="nav-link"><i class="fas fa-flask"></i> Labs</a></li>
-                        <li class="nav-item"><a href="#schedule" class="nav-link"><i class="fas fa-calendar-check"></i> Schedule</a></li>
-                        <li class="nav-item"><a href="#records" class="nav-link"><i class="fas fa-mail-bulk"></i> Mail</a></li>
-                        <li class="nav-item"><a href="#records" class="nav-link"><i class="fas fa-clipboard-list"></i> Request</a></li>
-                        <li class="nav-item"><a href="#records" class="nav-link"><i class="fas fa-file-pdf"></i> Records</a></li>
-                    </ul>
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-                        <span>Reports</span>
-                        <a href="#" class="d-flex align-items-center text-muted" aria-label="Add new Report"></a>
-                    </h6>
-                    <ul class="nav flex-column mb-2">
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-report"></i> Recent Transfers</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-check-circle"></i> Transfers</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-adjust"></i> Transfers</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-times-circle"></i> Transfers</a></li>
-                    </ul>
+            <!-- Main content -->
+            <section class="content">
+                <!-- row -->
+                <div class="row">
+                    <!-- col -->
+                    <div class="col-12">
+                        <!-- card -->
+                        <div class="card">
+                            <!-- card header -->
+                            <div class="card-header">
+                                <h3 class="card-title">Recent Transfers</h3>
+                            </div>
+                            <!-- ./card header -->
+                            <!-- card body -->
+                            <div class="card-body">
+                                <table id="example2" class="table table-bordered table-hover table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>Patient ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Date of Birth</th>
+                                            <th>Sex</th>
+                                            <th>Phone</th>
+                                            <th>Occupation</th>
+                                            <th>Marital Status</th>
+                                            <th>Religion</th>
+                                            <th>Blood Group</th>
+                                            <th>Genotype</th>
+                                            <th>Doctor ID</th>
+                                            <th>Diagnoses</th>
+                                            <th>Recieved Date</th>
+                                            <th>Approved Date</th>
+                                            <th>Patient Agreement</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>PAT251</td>
+                                            <td>Olabisi Joel</td>
+                                            <td>joel@gmail.com</td>
+                                            <td>05/02/1987</td>
+                                            <td>Male</td>
+                                            <td>+2349030628237</td>
+                                            <td>Lawyer</td>
+                                            <td>Christainity</td>
+                                            <td>Married</td>
+                                            <td>O-</td>
+                                            <td>AS</td>
+                                            <td>DOC201</td>
+                                            <td>Fever</td>
+                                            <td>02/10/2020</td>
+                                            <td>in progress</td>
+                                            <td>in progress</td>
+                                            <td>in progress</td>
+                                        </tr> 
+                                        <tr>
+                                            <td>PAT251</td>
+                                            <td>Paul chris</td>
+                                            <td>chris@gmail.com</td>
+                                            <td>05/02/1987</td>
+                                            <td>Male</td>
+                                            <td>+2349030736237</td>
+                                            <td>Engineer</td>
+                                            <td>Christainity</td>
+                                            <td>Single</td>
+                                            <td>A+</td>
+                                            <td>AA</td>
+                                            <td>DOC261</td>
+                                            <td>Thypiod</td>
+                                            <td>01/10/2020</td>
+                                            <td>02/13/2020</td>
+                                            <td>Agreed</td>
+                                            <td>Approved</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PAT201</td>
+                                            <td>Mathew chris</td>
+                                            <td>chris@gmail.com</td>
+                                            <td>05/02/1987</td>
+                                            <td>Male</td>
+                                            <td>+2349030736237</td>
+                                            <td>Engineer</td>
+                                            <td>Christainity</td>
+                                            <td>Single</td>
+                                            <td>B+</td>
+                                            <td>SA</td>
+                                            <td>DOC151</td>
+                                            <td>Malaria</td>
+                                            <td>01/10/2020</td>
+                                            <td>02/13/2020</td>
+                                            <td>Agreed</td>
+                                            <td>Approved</td>
+                                        </tr>                                    
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Patient ID</th>
+                                            <th>Name</th>
+                                            <th>Email</th>
+                                            <th>Date of Birth</th>
+                                            <th>Sex</th>
+                                            <th>Phone</th>
+                                            <th>Occupation</th>
+                                            <th>Marital Status</th>
+                                            <th>Religion</th>
+                                            <th>Blood Group</th>
+                                            <th>Genotype</th>
+                                            <td>Doctor ID</td>
+                                            <th>Diagnoses</th>
+                                            <th>Recieved Date</th>
+                                            <th>Approved Date</th>
+                                            <th>Patient Agreement</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-             Main Dashboard
-             <div class="col-md-9">
-                 <h1>jhk</h1>
-            </div>
-         </div>
-    </div> -->
-
-
-
-
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-      </aside>
-      <!-- /.control-sidebar -->
+            </section>
+            <!-- ./main conten -->
+        </div>
     </div>
-    <!-- ./wrapper -->
-    
+
+
+
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
-    <!-- jQuery UI 1.11.4 -->
-    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-    <script>
-      $.widget.bridge('uibutton', $.ui.button)
-    </script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <!-- ChartJS -->
-    <script src="plugins/chart.js/Chart.min.js"></script>
-    <!-- Sparkline -->
-    <script src="plugins/sparklines/sparkline.js"></script>
-    <!-- JQVMap -->
-    <script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-    <!-- jQuery Knob Chart -->
-    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-    <!-- daterangepicker -->
-    <script src="plugins/moment/moment.min.js"></script>
-    <script src="plugins/daterangepicker/daterangepicker.js"></script>
-    <!-- Tempusdominus Bootstrap 4 -->
-    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-    <!-- Summernote -->
-    <script src="plugins/summernote/summernote-bs4.min.js"></script>
-    <!-- overlayScrollbars -->
-    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-    <!-- AdminLTE App -->
+    <!-- DataTables -->
+    <script src="plugins/datatables/jquery.dataTables.js"></script>
+    <script src="plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
     <script src="assets/js/adminlte.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="assets/js/pages/dashboard.js"></script>
-    <!-- AdminLTE for demo purposes -->
     <script src="assets/js/demo.js"></script>
+    <!-- page script -->
+    <script>
+        $(function () {
+            $("#example1").DataTable();
+            $('#example2').DataTable({
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false,
+            });
+        });
+    </script>
+
 </body>
 
 </html>
