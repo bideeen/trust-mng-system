@@ -45,6 +45,91 @@
                 <li class="nav-item"><a class="nav-link" href="#">Setting</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Log out</a></li>
             </ul>
+            <!-- Search Form -->
+            <form class="form-inline ml-3">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Message dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link">
+                        <i class="far fa-comments"></i>
+                        <!-- Php code for Unread messages -->
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message start -->
+                            <div class="media">
+                                <img src="assets/img/user1-128x128.jpg" alt="user avatar" class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Dr Ajadi
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Call me back</p>
+                                    <p class="text-sm text-muted"><i class="fas fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- ./Message end -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message start -->
+                            <div class="media">
+                                <img src="assets/img/user8-128x128.jpg" alt="" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Dr Oludare
+                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">I got your messsage</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock"></i> 6 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message stop -->
+                        </a>
+                    </div>
+                </li>
+                <!-- NOtification Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link">
+                        <i class="far fa-bell" aria-hidden="true"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>4 new messages
+                            <span class="float-right text-muted text-sm">12 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>8 friends Request
+                            <span class="float-right text-muted text-sm">16 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>3 new reports
+                            <span class="float-right text-muted text-sm">23 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-widget="control-sidebar" data-slide="true">
+                        <i class="fas fa-th-large    "></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
         <!-- /.Navbar -->
         <!-- Main sidebar container -->

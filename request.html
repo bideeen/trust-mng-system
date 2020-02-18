@@ -45,6 +45,91 @@
                 <li class="nav-item"><a class="nav-link" href="#">Setting</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Log out</a></li>
             </ul>
+            <!-- Search Form -->
+            <form class="form-inline ml-3">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Message dropdown menu -->
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link">
+                        <i class="far fa-comments"></i>
+                        <!-- Php code for Unread messages -->
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message start -->
+                            <div class="media">
+                                <img src="assets/img/user1-128x128.jpg" alt="user avatar" class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Dr Ajadi
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Call me back</p>
+                                    <p class="text-sm text-muted"><i class="fas fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- ./Message end -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message start -->
+                            <div class="media">
+                                <img src="assets/img/user8-128x128.jpg" alt="" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Dr Oludare
+                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">I got your messsage</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock"></i> 6 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message stop -->
+                        </a>
+                    </div>
+                </li>
+                <!-- NOtification Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-link">
+                        <i class="far fa-bell" aria-hidden="true"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>4 new messages
+                            <span class="float-right text-muted text-sm">12 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>8 friends Request
+                            <span class="float-right text-muted text-sm">16 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i>3 new reports
+                            <span class="float-right text-muted text-sm">23 Hours ago</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-widget="control-sidebar" data-slide="true">
+                        <i class="fas fa-th-large    "></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
         <!-- /.Navbar -->
         <!-- Main sidebar container -->
@@ -91,7 +176,7 @@
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
             <!-- Content Header -->
-            <div class="content-header">
+            <section class="content-header">
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
@@ -105,10 +190,145 @@
                         </div><!--./col-->
                     </div><!--./row-->
                 </div><!--./container-fluid-->
-            </div>
+            </section>
             <!--content header-->
 
             <!-- Main content -->
+            <!-- Main content -->
+            <section class="content">
+               <div class="container">
+                   <div class="row">
+                       <!-- pending col-md-6 -->
+                       <div class="col-md-6">
+                            <!-- pending box -->
+                            <div class="card">
+                                <!-- card header -->
+                                <div class="card-header">
+                                    <h3 class="card-title">Pending</h3>
+            
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- ./card header -->
+                                <!-- card body -->
+                                <div class="card-body p-0">
+                                    <table class="table table-striped table-hover table-responsive projects">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 1%;">Id</th>
+                                                <th style="width: 10%;">Name</th>
+                                                <th style="width: 10%;">Purpose</th>
+                                                <th style="width: 10%;">Patient</th>
+                                                <th style="width: 8%;">status</th>
+                                                <th style="width: 8%;">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>DOC159</td>
+                                                <td>Dr Paul</td>
+                                                <td>Need to be....</td>
+                                                <td>Mark Willows</td>
+                                                <td class="project-state">
+                                                    <span class="badge badge-warning">Pending</span>
+                                                </td>
+                                                <td class="project-actions text-right">
+                                                    <a href="" class="btn btn-primary btn-sm">
+                                                        <i class="fas fa-eye"></i>
+                                                    </a>
+                                                    <a href="" class="btn btn-info btn-sm">
+                                                        <i class="fas fa-thumbs-up"></i>
+                                                    </a>
+                                                    <a href="" class="btn btn-danger btn-sm">
+                                                        <i class="fas fa-thumbs-down"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>DOC190</td>
+                                                <td>Dr Oludare</td>
+                                                <td>Urgent Operation...</td>
+                                                <td>Elon Musk</td>
+                                                <td class="project-state">
+                                                    <span class="badge badge-warning">Pending</span>
+                                                </td>
+                                                <td class="project-actions text-right">
+                                                    <a href="" class="btn btn-primary btn-sm">
+                                                        <i class="fas fa-eye"></i>
+                                                    </a>
+                                                    <a href="" class="btn btn-info btn-sm">
+                                                        <i class="fas fa-thumbs-up"></i>
+                                                    </a>
+                                                    <a href="" class="btn btn-danger btn-sm">
+                                                        <i class="fas fa-thumbs-down"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- ./card body -->
+                            </div>
+                       </div>
+                       <!-- ./pending col-md-6 -->
+                       <!-- Approved col-md-6 -->
+                       <div class="col-md-6">
+                            <!-- Approved box -->
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Approved</h3>
+            
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- ./card header -->
+                                <!-- card body -->
+                                <div class="card-body p-0">
+                                    <table class="table table-striped table-hover table-responsive projects">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 1%;">Id</th>
+                                                <th style="width: 15%;">Name</th>
+                                                <th style="width: 15%;">Purpose</th>
+                                                <th style="width: 15%;">Patient</th>
+                                                <th style="width: 8%;">status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>DOC059</td>
+                                                <td>Dr Bello</td>
+                                                <td>Need to be....</td>
+                                                <td>Will Emerson</td>
+                                                <td class="project-state">
+                                                    <span class="badge badge-success">Approved</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>LAB120</td>
+                                                <td>Nitro LABS</td>
+                                                <td>HIV TES</td>
+                                                <td>Singh Rusav</td>
+                                                <td class="project-state">
+                                                    <span class="badge badge-success">Approved</span>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- ./card body -->
+                            </div>
+                       </div>
+                       <!-- ./Approved col-md-6 -->
+                   </div>
+               </div>
+            </section>
             
         </div>
     </div>
